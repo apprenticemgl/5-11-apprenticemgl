@@ -9,9 +9,14 @@
 			<?php the_content(); ?>
 
             <?php
-            
+            $zurag = get_field('zurag');
+            $zuragiin_tailbar = get_field('zuragiin_tailbar');
             ?>
 
+            <img src="<?= $zurag; ?>">
+
+            <?= $zuragiin_tailbar; ?>
+            
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php get_footer(); ?>
